@@ -6,7 +6,5 @@ categories: announce
 ---
 ##I started Academic Blog!!
 
-##Please keep attention on it.
+#Please keep attention on it.
 
-
-#My [personal site](http://vision.snu.ac.kr/cesc) url.
