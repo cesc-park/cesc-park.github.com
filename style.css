@@ -54,12 +54,16 @@ html, body {
   font-weight: 400;
 }
 #htdesc {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
   margin-top: -6px;
 }
-#htem {
-  font-size: 14px;
+#htem_cv {
+  font-size: 20px;
+  font-weight: 300;
+}
+#htem_co {
+  font-size: 20px;
   font-weight: 300;
 }
 @media (max-width: 768px) {
