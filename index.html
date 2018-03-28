@@ -1,22 +1,263 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cesc Park Academic Website</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="./style.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
 
-<div class="home">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body onload="start()">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div id="header" class="bg1">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div id="headerblob">
+    <img src="./images/me.jpg" class="img-circle imgme">
+    <div id="headertext">
+      <div id="htname">Cesc Chunseong Park</div>
+      <div id="htdesc">Lunit Inc.  Research Scientist</div>
+      <div id="htem">cspark _at_ lunit.io</div>
+      <div id="htem"><a href="http://vision.snu.ac.kr/cesc/cv.pdf" class="cv">[Curriculum Vitae]</a></div>
+
+      <div id="icons">
+        <div class="svgico">
+          <a href="https://github.com/cesc-park"><img src="octocat.svg" width="56px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <h2 style="text-align:right">Timeline.</h2>
+
+
+  <section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+
+        <div class="cd-timeline-content service-box-content">
+            <div class="timelineit">
+             <div class="tdate">Spring 2017 -</div>
+              <div class="ttitle">Lunit Inc.</div>
+              <div class="tdesc">Research Scientist, R&D Center</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div>
+
+        <div class="cd-timeline-content service-box-content">
+            <div class="timelineit">
+             <div class="tdate">Spring 2015 - Spring 2017</div>
+              <div class="ttitle">Seoul National University: Master's Degree</div>
+              <div class="tdesc">I worked with Gunhee Kim on <br><span class="thigh">Computer vision</span> and <span class="thigh">Deep learning</span>.</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-movie">
+        </div>
+
+        <div class="cd-timeline-content service-box-content">
+            <div class="timelineit">
+              <div class="tdate">Spring 2015
+              </div>
+              <div class="ttitle">Sungkyunkwan University: Bachelor's Degree</div>
+              <div class="ttitle">(Summa Cum Laude)</div>
+
+              <div class="tdesc"> Major in <span class="thigh">Software</span>.</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div>
+
+        <div class="cd-timeline-content service-box-content">
+            <div class="timelineit">
+              <div class="tdate">Winter 2014
+              </div>
+              <div class="ttitle">SAMSUNG Internship</div>
+
+              <div class="tdesc"> Software Center <span class="thigh">AI Lab</span>.</div>
+            </div>
+        </div>
+    </div>
+    <div class="cd-timeline-block start-block">
+        <div class="cd-timeline-img cd-movie">
+        </div>
+    </div>
+    <p class="txt-times">The Beginning (2012)</p>
+
+  </section>
+
+
+  <section id="about" class="cd-intro">
+    <h1 class="cd-headline letters type">
+      <span>I'm interested in </span>
+      <span class="cd-words-wrapper waiting">
+        <b class="is-visible">computer vision.</b>
+        <b>natural language processing.</b>
+        <b>deep learning.</b>
+      </span>
+    </h1>
+  </section>
+
+</div>
+
+
+<hr class="soft">
+
+<div class="container">
+  <h2 >Publications.</h2>
+  <div id="pubs">
+    <div class="pubwrap" style="border-bottom: none;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+            <img src="./crcn_tpami2017.png">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+            <div class="pubt">Retrieval of Sentence Sequences for an Image Stream via Coherence Recurrent Convolutional Networks</div>
+            <div class="pubd">
+              We propose an approach for retrieving a sequence of natural sentences for an image stream. Since general users often take a series of pictures on their experiences, much online visual information exists in the form of image streams, for which it would better take into consideration of the whole image stream to produce natural language descriptions. While almost all previous studies have dealt with the relation between a single image and a single natural sentence, our work extends both input and output dimension to a sequence of images and a sequence of sentences. Our approach directly learns from vast user-generated resource of blog posts as text-image parallel training data. We collect more than 22K unique blog posts with 170K associated images for the travel topics of NYC, Disneyland, Australia, and Hawaii.
+            </div>
+            <div class="puba">Cesc Chunseong Park, Youngjin Kim, Gunhee Kim</div>
+            <div class="pubv">IEEE TPAMI 2017</div>
+            <div class="publ">
+              <ul>
+                <li ><a class="pdf">PDF (Soon)</a></li>
+                <li ><a href="https://github.com/cesc-park/CRCN" class="pdf">Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pubwrap" style="border-bottom: none;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+            <img src="./personalcap_cvpr2017.jpg">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+            <div class="pubt">Attend to You: Personalized Image Captioning with Context Sequence Memory Networks</div>
+            <div class="pubd">
+              We address personalization issues of image captioning, which have not been discussed yet in previous research. For a query image, we aim to generate a descriptive sentence, accounting for prior knowledge such as the user's active vocabularies in previous documents. As applications of personalized image captioning, we tackle two post automation tasks: hashtag prediction and post generation, on our newly collected Instagram dataset, consisting of 1.1M posts from 6.3K users. We propose a novel captioning model named Context Sequence Memory Network (CSMN).
+            </div>
+            <div class="puba">Cesc Chunseong Park, Byeongchang Kim, Gunhee Kim</div>
+            <div class="pubv">CVPR 2017 (Spotlight)</div>
+            <div class="publ">
+              <ul>
+                <li ><a href="https://arxiv.org/abs/1704.06485" class="pdf">PDF</a></li>
+                <li ><a href="https://github.com/cesc-park/attend2u" class="pdf">Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pubwrap" style="border-bottom: none;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+            <img src="./stream2text_nips2015.jpg">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+            <div class="pubt">Expressing an Image Stream with a Sequence of Natural Sentences</div>
+            <div class="pubd">
+              We propose an approach for generating a sequence of natural sentences for an image stream. Since general users usually take a series of pictures on their special moments, much online visual information exists in the form of image streams, for which it would better take into consideration of the whole set to generate natural language descriptions. While almost all previous studies have dealt with the relation between a single image and a single natural sentence, our work extends both input and output dimension to a sequence of images and a sequence of sentences. To this end, we design a novel architecture called coherent recurrent convolutional network (CRCN), which consists of convolutional networks, bidirectional recurrent networks, and entity-based local coherence model. Our approach directly learns from vast user-generated resource of blog posts as text-image parallel training data. We demonstrate that our approach outperforms other state-of-the-art candidate methods, using both quantitative measures (e.g. BLEU and top-K recall) and user studies via Amazon Mechanical Turk.
+            </div>
+            <div class="puba">Cesc Chunseong Park, Gunhee Kim</div>
+            <div class="pubv">NIPS 2015</div>
+            <div class="publ">
+              <ul>
+                <li ><a href="http://www.cs.cmu.edu/~gunhee/publish/nips15_stream2text.pdf" class="pdf">PDF</a></li>
+                <li ><a href="https://github.com/cesc-park/CRCN" class="pdf">Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="morepubs">
+
+    </div>
+
+
+  </div>
 
 
 </div>
+
+<hr class="soft">
+
+<div class="container">
+  <h2 style="text-align:center">Teaching.</h2>
+  <div class="ctr">
+    <div class="hht">TA of 2nd Semaster 2015: Gunhee Kim</div>
+    <div class="hht coursename">Probabilistic Graphical Models</div>
+
+  <div class="hht">
+    <br>
+  Also have a look at the <a href="">course syllabus page</a>.
+  </div>
+
+  </div>
+
+</div>
+
+
+<div id="sitefooter">
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./modernizr.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+
+<script src="./main.min.js"></script>
+<script>
+
+function start() {
+
+  var more_pubs_shown = false;
+  $("#showmorepubs").click(function() {
+    if(!more_pubs_shown) {
+      $("#morepubs").slideDown('fast', function() {
+        $("#showmorepubs").text('hide');
+      });
+      more_pubs_shown = true;
+    } else {
+      $("#morepubs").slideUp('fast', function() {
+        $("#showmorepubs").text('show more');
+      });
+      more_pubs_shown = false;
+    }
+  });
+
+}
+
+</script>
+
+
+</body></html>
