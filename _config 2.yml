@@ -1,0 +1,14 @@
+# Site settings
+title: Cesc Blog
+#email: cs.park@vision.snu.ac.kr
+description: > # this means to ignore newlines until "baseurl:"
+    Academic Blog
+    about Deep learning, Computer Vision and Natural Language Processing.
+
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://cesc-park.github.io" # the base hostname & protocol for your site
+#twitter_username: 
+github_username:  cesc-park
+
+# Build settings
+markdown: kramdown
